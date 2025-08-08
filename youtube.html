@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Youtube.com Clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+  </head>
+  <body>
+<!--  This will be the header of our youtube page (search, logo, account)  -->
+
+  <header class="header">
+
+    <div class="left-section">
+      <div class="hamburger-button">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="">
+      </div>
+
+      <div class="youtube-button">
+        <img class="youtube-logo" src="icons/youtube-logo.svg" alt="">
+      </div>
+
+    </div>
+    
+    
+    <div class="middle-section">
+
+      <input class="search-bar" type="text" placeholder="Search">
+      <button class="search-button">
+        <img class="search-icon" src="/icons/search.svg" alt="">
+        <div class="tooltip">Search</div>
+      </button>
+
+      <button class="voice-button">
+       <img class="voice-icon" src="icons/voice-search-icon.svg" alt="">
+       <div class="tooltip">Search with your voice</div>
+      </button>
+    </div>
+    
+    
+      <div class="right-section">
+        <div class="upload-button">
+          <img class="upload-icon" src="/icons/upload.svg" alt="">
+          <div class="tooltip">Create</div>
+        </div>
+        
+        <div class="apps-button">
+          <img class="apps-icon" src="/icons/youtube-apps.svg" alt="">
+          <div class="tooltip">YouTube Apps</div>
+        </div>
+
+        <div class="notification-button">
+          <img class="notifications-icon" src="/icons/notifications.svg" alt="">
+          <div class="tooltip">Notifications</div>
+          <div class="notification-count">3</div>
+        </div>
+
+        <div class="user-button">
+          <img class="user-icon" src="channel-pictures/mypfp.jpeg" alt="">
+          <div class="tooltip"></div>
+        </div>
+
+      </div>
+    </header>
+
+
+<!--  This will be the sidebar of our youtube page (home, subscription, etc)  -->
+
+<nav class="sidebar">
+
+    <div class="sidebar-icons"><img src="icons/home.svg" alt="">
+      <div>Home</div>
+    </div>
+
+
+    <div class="sidebar-icons"><img src="icons/explore.svg" alt="">
+      <div>Explore</div>
+    </div>
+
+
+    <div class="sidebar-icons"><img src="icons/subscriptions.svg" alt="">
+      <div>Subscriptions</div>
+    </div>
+
+
+    <div class="sidebar-icons"><img src="icons/originals.svg" alt="">
+      <div>Originals</div>
+    </div>
+
+
+    <div class="sidebar-icons"><img src="icons/youtube-music.svg" alt="">
+      <div>YouTube Music</div>
+    </div>
+
+    <div class="sidebar-icons"><img src="icons/library.svg" alt="">
+      <div>Library</div>
+    </div>
+
+  </nav>
+
+
+<!--  This will be the main content of our youtube page (videos, details)  -->
+<main>
+  
+    <div class="video-grid">
+    
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="">
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-1.jpeg" alt="">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">
+              Marques Brownlee
+            </p>
+            <p class="video-stats">
+              3.4M views &#183; 6 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="">
+          <div class="video-time">8:22</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-2.jpeg" alt="">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Try Not To Laugh Challenge #9
+            </p>
+            <p class="video-author">
+              Markiplier
+            </p>
+            <p class="video-stats">
+              19M views &#183; 4 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-3.webp" alt="">
+          <div class="video-time">2:11:23</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-3.jpeg" alt="">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              TRASH TASTE GOES VIRTUAL (ft.@IronMouseParty)
+            </p>
+            <p class="video-author">
+              Trash Taste
+            </p>
+            <p class="video-stats">
+              729k views &#183; 1 month ago
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-4.webp" alt="">
+          <div class="video-time">2:58</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-4.jpeg" alt="">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              is this what heaven sounds like?
+            </p>
+            <p class="video-author">
+              George Collier
+            </p>
+            <p class="video-stats">
+              2.2M views &#183; 2 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-5.webp" alt="">
+          <div class="video-time">6:31:23</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-5.jpeg" alt="">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              HTML & CSS Full Course - Beginner to Pro
+            </p>
+            <p class="video-author">
+              SuperSimpleDev
+            </p>
+            <p class="video-stats">
+              16M views &#183; 3 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-6.webp" alt="">
+          <div class="video-time">58:01</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-6.jpeg" alt="">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Twilight Ride across Tokyo Bay / 8K 60fps HDR / Soft Lofi Beats
+            </p>
+            <p class="video-author">
+              Abao Vision
+            </p>
+            <p class="video-stats">
+              218k views &#183; 1 month ago
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="">
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-1.jpeg" alt="">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">
+              Marques Brownlee
+            </p>
+            <p class="video-stats">
+              3.4M views &#183; 6 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="">
+          <div class="video-time">8:22</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-2.jpeg" alt="">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Try Not To Laugh Challenge #9
+            </p>
+            <p class="video-author">
+              Markiplier
+            </p>
+            <p class="video-stats">
+              19M views &#183; 4 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-3.webp" alt="">
+          <div class="video-time">2:11:23</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-3.jpeg" alt="">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              TRASH TASTE GOES VIRTUAL (ft.@IronMouseParty)
+            </p>
+            <p class="video-author">
+              Trash Taste
+            </p>
+            <p class="video-stats">
+              729k views &#183; 1 month ago
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-4.webp" alt="">
+          <div class="video-time">2:58</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-4.jpeg" alt="">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              is this what heaven sounds like?
+            </p>
+            <p class="video-author">
+              George Collier
+            </p>
+            <p class="video-stats">
+              2.2M views &#183; 2 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-5.webp" alt="">
+          <div class="video-time">6:31:23</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-5.jpeg" alt="">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              HTML & CSS Full Course - Beginner to Pro
+            </p>
+            <p class="video-author">
+              SuperSimpleDev
+            </p>
+            <p class="video-stats">
+              16M views &#183; 3 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-6.webp" alt="">
+          <div class="video-time">58:01</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-6.jpeg" alt="">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Twilight Ride across Tokyo Bay / 8K 60fps HDR / Soft Lofi Beats
+            </p>
+            <p class="video-author">
+              Abao Vision
+            </p>
+            <p class="video-stats">
+              218k views &#183; 1 month ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+</main>
+
+    </div>
+  </body>
+</html>
